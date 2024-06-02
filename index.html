@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project Page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="content">
+        <h1 class="award">AWARD WINNING</h1>
+        <h2 class="title">DIGITAL MARKETING AGENCY</h2>
+        <p class="description">
+          Morbi sed lacus nec risus finibus feugiat et fermentum nibh.
+          Pellentesque vitae ante at elit fringilla ac at purus, Morbi sed lacus
+          nec risus finibus feugiat et fermentum
+        </p>
+        <a href="contact.html" class="contact-button">CONTACT US</a>
+      </div>
+      <div class="image-container">
+        <img src="hero.png" alt="Person working" class="image" />
+      </div>
+    </div>
+
+    <section class="services">
+      <div class="container1">
+        <h2 class="section-title">WHAT WE DO</h2>
+        <h1 class="main-title">
+          SERVICES PROVIDE <br />
+          FOR YOU
+        </h1>
+        <p class="description1">
+          Morbi sed lacus nec risus finibus feugiat et fermentum nibh.
+          Pellentesque vitae ante at elit fringilla ac at purus, Morbi sed lacus
+          nec risus finibus feugiat et fermentum
+        </p>
+        <div class="services-grid">
+          <div class="service-item" data-index="0">
+            <img src="1.png" alt="Service Image 1" />
+          </div>
+          <div class="service-item" data-index="1">
+            <img src="2.png" alt="Service Image 2" />
+          </div>
+          <div class="service-item highlighted" data-index="2">
+            <div class="service-content">
+              <img src="icon.svg" alt="Web Development Icon" />
+              <h3>WEB DEVELOPMENT</h3>
+              <p>
+                Morbi sed lacus nec risus finibus feugiat et fermentum nibh.
+                Pellentesque
+              </p>
+              <button
+                class="read-more-button"
+                onclick="redirectToURL('https://www.fylehq.com')"
+              >
+                READ MORE
+                <span class="arrow">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="37"
+                    height="10"
+                    viewBox="0 0 37 10"
+                  >
+                    <defs>
+                      <style>
+                        .a {
+                          fill: #ff3147;
+                        }
+                      </style>
+                    </defs>
+                    <g transform="translate(-352 -742)">
+                      <path
+                        class="a"
+                        d="M5,0l5,8H0Z"
+                        transform="translate(389 742) rotate(90)"
+                      />
+                      <rect
+                        class="a"
+                        width="29"
+                        height="2"
+                        transform="translate(352 746)"
+                      />
+                    </g>
+                  </svg>
+                </span>
+              </button>
+            </div>
+          </div>
+          <div class="service-item" data-index="3">
+            <img src="3.png" alt="Service Image 3" />
+          </div>
+        </div>
+        <div class="pagination">
+          <span class="dot active" data-index="0"></span>
+          <span class="dot" data-index="1"></span>
+          <span class="dot" data-index="2"></span>
+          <span class="dot" data-index="3"></span>
+        </div>
+      </div>
+    </section>
+
+    <div class="why-choose-us">
+        <h2>WHY CHOOSE US</h2>
+        <h1>WHY WE ARE BEST</h1>
+        <div class="features">
+            <div class="feature">
+                <img src="vision.png" alt="Vision Target Icon">
+                <h3>Clarified Vision & Target</h3>
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy.</p>
+            </div>
+            <div class="feature">
+                <img src="high.png" alt="High Performance Icon">
+                <h3>High Performance</h3>
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy.</p>
+            </div>
+            <div class="feature">
+                <img src="maintain.png" alt="Maintain Security Icon">
+                <h3>Maintain Security</h3>
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy.</p>
+            </div>
+            <div class="feature">
+                <img src="better.png" alt="Better Strategy Icon">
+                <h3>Better Strategy & Quality</h3>
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy.</p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- New Section Below Services Section -->
+    <section class="projects">
+      <div class="projects-container">
+        <h2 class="projects-title">OUR PROJECT</h2>
+        <h1 class="projects-subtitle">WHY WE ARE BEST</h1>
+        <div class="projects-content">
+          <div class="projects-image-container">
+            <img id="project-image" src="image.png" alt="Fruits on table" />
+          </div>
+          <div class="projects-text-container">
+            <div class="projects-text-block" onclick="changeImage('un1.jpg')">
+              <h3>Genderless Kei – Japan's Hot</h3>
+              <p>
+                Set to launch on the manufacturer’s new A330neo aircraft in
+                2017, it’s offering lots of
+              </p>
+            </div>
+            <div
+              class="projects-text-block projects-highlighted"
+              onclick="changeImage('image.png')"
+            >
+              <h3>Better Strategy & Quality</h3>
+              <p>
+                Set to launch on the manufacturer’s new A330neo aircraft in
+                2017, it’s offering lots of
+              </p>
+            </div>
+            <div class="projects-text-block" onclick="changeImage('un2.jpg')">
+              <h3>Genderless Kei – Japan's Hot</h3>
+              <p>
+                Set to launch on the manufacturer’s new A330neo aircraft in
+                2017, it’s offering lots of
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="company-growth">
+      <h2>EXPERTS GROWTH</h2>
+      <h1>OUR COMPANY GROWTH</h1>
+      <div class="growth-cards">
+        <div class="card">
+          <span class="icon">❤</span>
+          <h3>199+</h3>
+          <p>Staticfied Customers</p>
+        </div>
+        <div class="card">
+          <span class="icon">⏰</span>
+          <h3>1591+</h3>
+          <p>Days Of Operation</p>
+        </div>
+        <div class="card">
+          <span class="icon">✔</span>
+          <h3>283+</h3>
+          <p>Complete Project</p>
+        </div>
+        <div class="card">
+          <span class="icon">🏆</span>
+          <h3>75+</h3>
+          <p>Win Awards</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="feedback-section">
+      <div class="feedback-content">
+        <h2>CLIENT'S FEEDBACK</h2>
+        <h1>PEOPLE SAY'S ABOUT US !</h1>
+        <p class="quote">
+          <span class="quote-mark">“</span>
+          Jannat Tumpa The standard chunk of Lorem Ipsum used since the 1500s is
+          reproduced below for those interested. Sections Bonorum et Malorum
+          original.
+          <span class="quote-mark">”</span>
+        </p>
+        <p class="author">
+          <strong>JANNAT TUMPA</strong> - COO, AMERIMAR ENTERPRISES, INC.
+        </p>
+      </div>
+      <div class="footer">
+        <img src="Group 500.png">
+      </div>
+    </div>
+
+  
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
