@@ -1,3 +1,21 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -106,6 +124,7 @@ body {
     gap: 20px;
     justify-content: center;
     margin-top: 60px;
+   
 }
 
 .service-item {
@@ -464,4 +483,22 @@ opacity: 1;
 .feature p {
     font-size: 16px;
     color: #555;
+}
+
+
+@keyframes next1{
+    from{
+        left:0%
+    }
+    to{
+        left: -100%;
+    }
+}
+@keyframes next2{
+    from{
+        left:100%
+    }
+    to{
+        left: 0%;
+    }
 }

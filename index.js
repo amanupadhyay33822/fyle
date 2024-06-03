@@ -108,3 +108,48 @@ $(document).ready(function () {
     // Update href attribute of read more button
     $('.read-more-button').attr('href', 'https://www.fylehq.com');
 });
+
+
+let serviceItems = document.querySelectorAll(".service-item");
+let dots = document.querySelectorAll('.dot');
+let counter = 0;
+
+function updateDots() {
+    // Remove the active class from all dots
+    dots.forEach(dot => {
+        dot.classList.remove('active');
+    });
+    // Add the active class to the current dot
+    dots[counter].classList.add('active');
+}
+
+function slideNext() {
+    // Remove animation from all slides
+    serviceItems.forEach(item => {
+        item.style.animation = "";
+    });
+
+    serviceItems[counter].style.animation = "next1 0.5s ease-in forwards";
+    if(counter >= serviceItems.length - 1) {
+        counter = 0;
+    } else {
+        counter++;
+    }
+    serviceItems[counter].style.animation = "next2 0.5s ease-out backwards";
+
+    // Update the dots to reflect the current slide
+    updateDots();
+}
+
+function autoSliding() {
+    let deletInterval = setInterval(timer, 2000);
+    function timer() {
+        slideNext();
+    }
+}
+
+autoSliding();
+
+
+
+
