@@ -135,7 +135,7 @@ function slideNext() {
     } else {
         counter++;
     }
-    serviceItems[counter].style.animation = "next2 0.5s ease-out backwards";
+    serviceItems[counter].style.animation = "next2 0.5s ease-out forwards";
 
     // Update the dots to reflect the current slide
     updateDots();
